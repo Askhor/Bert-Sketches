@@ -1,0 +1,3 @@
+function module(info::ModuleInfo) {
+	....
+}

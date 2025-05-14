@@ -1,0 +1,6 @@
+import "file1";
+// Circular imports just work
+
+function bar() {
+	foo();
+}

@@ -1,0 +1,3 @@
+import "file1";
+import "file2";
+// This also works, references only look at the file name; This makes refactoring easier, as file can just be moved between directories

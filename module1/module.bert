@@ -1,0 +1,18 @@
+// This function is invoked at compile time
+function module(info::ModuleInfo) {
+	info.setName("module1");
+
+	// This is how inter-module dependencies are declared
+	info.import("module2");
+	info.import("string"); // This module probably would be imported automatically
+
+	// This line generates an executable by the name 'ernie' and places it in the build directory
+	// info.executable("ernie");
+
+	// A library file is always generated
+
+	
+	// info.c_header("ernie.h");
+	// info.cpp_header("ernie.hpp");
+	// These two methods generate header files for c and c++ respectively and expose the appropriate methods in the library file
+}
